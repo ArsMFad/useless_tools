@@ -6,7 +6,7 @@ for i in range(len(letters)):
 	alphabet[letters[i]] = i
 
 
-def encrypt(s):
+def encode(s):
 	s_bin = ""
 
 	for i in s:
@@ -25,7 +25,7 @@ def encrypt(s):
 	return to_ret
 
 
-def decrypt(s):
+def decode(s):
 	s_dec = []
 
 	for i in s:
@@ -60,9 +60,9 @@ cmd = input("Enter command [E]/[D]: ")
 cmd = cmd.upper()
 
 if cmd == "E":
-	print(encrypt(inp_str))
+	print(encode(inp_str))
 elif cmd == "D":
-	print(decrypt(inp_str))
+	print(decode(inp_str))
 else:
 	print("[Error]: Wrong command")
 
