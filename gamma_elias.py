@@ -16,7 +16,7 @@ def decode(s):
 			s_bin_lens.append(tmp)
 			tmp = "1"
 			zero_cnter = 0
-			i-=1
+			i -= 1
 		elif s[i] == "0":
 			zero_cnter += 1
 		i += 1
@@ -63,7 +63,7 @@ def encode(s):
 	return to_ret
 
 
-inp_str = input("Enter number: ")
+inp_str = input("Enter string: ")
 cmd = input("Enter command [E]/[D]: ")
 cmd = cmd.upper()
 
